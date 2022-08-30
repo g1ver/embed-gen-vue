@@ -13,60 +13,16 @@
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"
         ></script>
-
         <title>Embed Generator</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-md">
             <header>
                 <h1>Embed Generator</h1>
             </header>
             <div class="row">
-                <div class="embed-controls col">
-                    <form>
-                        <label for="author" class="form-label">Author</label>
-                        <input type="text" id="author" class="form-control" />
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" id="title" class="form-control" />
-                        <label for="desc" class="form-label">Description</label>
-                        <textarea
-                            id="desc"
-                            cols="30"
-                            rows="10"
-                            class="form-control"
-                        ></textarea>
-                        <label for="image-url" class="form-label"
-                            >Image URL</label
-                        >
-                        <input
-                            type="text"
-                            id="image-url"
-                            class="form-control"
-                        />
-                        <label for="redirect-url" class="form-label"
-                            >Redirect URL</label
-                        >
-                        <input
-                            type="text"
-                            id="redirect-url"
-                            class="form-control"
-                        />
-                        <label for="sidebar-color" class="form-label"
-                            >Sidebar Color</label
-                        >
-                        <input
-                            type="text"
-                            id="sidebar-color"
-                            class="form-control"
-                        />
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary mt-2">
-                                Create Embed
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="embed-preview col">
+                <div class="embed-preview col-md-6 order-md-last">
+                    <h4>Preview</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptatibus maiores voluptate quidem molestias
@@ -75,7 +31,78 @@
                         distinctio voluptas!
                     </p>
                 </div>
+                <div class="embed-controls col-md-6">
+                    <form>
+                        <div class="mb-2">
+                            <label for="author" class="form-label"
+                                >Author</label
+                            >
+                            <input
+                                type="text"
+                                id="author"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="mb-2">
+                            <label for="title" class="form-label">Title</label>
+                            <input
+                                type="text"
+                                id="title"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="mb-2">
+                            <label for="desc" class="form-label"
+                                >Description</label
+                            >
+                            <textarea
+                                id="desc"
+                                cols="30"
+                                rows="10"
+                                class="form-control"
+                            ></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label for="image-url" class="form-label"
+                                >Image URL</label
+                            >
+                            <input
+                                type="text"
+                                id="image-url"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="mb-2">
+                            <label for="redirect-url" class="form-label"
+                                >Redirect URL</label
+                            >
+                            <input
+                                type="text"
+                                id="redirect-url"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="mb-2">
+                            <label for="sidebar-color" class="form-label"
+                                >Sidebar Color</label
+                            >
+                            <input
+                                type="text"
+                                id="sidebar-color"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary mt-2">
+                                Create Embed
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+        <footer>
+            <h1>footer placeholder</h1>
+        </footer>
     </body>
 </html>
